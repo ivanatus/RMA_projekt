@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalkingAnalysis">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/add_walk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new walk"
+        android:textColor="@color/charcoal"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/walk_graph"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/walk_graph_vars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12.5dp"/>
+
+        <TextView
+            android:id="@+id/fastest_walk"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/ash_gray"
+            android:text=" Fastest walk: "
+            android:textColor="@color/charcoal"
+            android:textSize="19.2dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/longest_walk"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:text=" Longest walk: "
+            android:layout_gravity="center"
+            android:background="@color/ash_gray"
+            android:textColor="@color/charcoal"
+            android:textSize="19.2dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/last_walk"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:text=" Last walk: "
+            android:layout_gravity="center"
+            android:background="@color/ash_gray"
+            android:textColor="@color/charcoal"
+            android:textSize="19.2dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</FrameLayout>

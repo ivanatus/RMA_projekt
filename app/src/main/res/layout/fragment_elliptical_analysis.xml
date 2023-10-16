@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EllipticalAnalysis">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/add_elliptic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a new elliptical session"
+        android:textColor="@color/charcoal"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/elliptic_graph"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/elliptic_graph_vars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12.5dp"/>
+
+        <TextView
+            android:id="@+id/fastest_elliptic"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/ash_gray"
+            android:text=" Fastest elliptical session: "
+            android:textColor="@color/charcoal"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/longest_elliptic"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:text=" Longest elliptical session: "
+            android:layout_gravity="center"
+            android:background="@color/ash_gray"
+            android:textColor="@color/charcoal"
+            android:textSize="19dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/last_elliptic"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:text=" Last elliptical session: "
+            android:layout_gravity="center"
+            android:background="@color/ash_gray"
+            android:textColor="@color/charcoal"
+            android:textSize="19dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</FrameLayout>
